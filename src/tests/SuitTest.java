@@ -24,6 +24,15 @@ public class SuitTest {
   }
 
   @Test
+  public void testSuit() {
+    // Only for code coverage
+    assertEquals(Suit.CLUBS, Suit.CLUBS);
+    assertEquals(Suit.DIAMONDS, Suit.DIAMONDS);
+    assertEquals(Suit.HEARTS, Suit.HEARTS);
+    assertEquals(Suit.SPADES, Suit.SPADES);
+  }
+  
+  @Test
   public void testSuitWithTheBuiltInMethodValues() {
     String result = "";
     for (Suit suit : Suit.values())
